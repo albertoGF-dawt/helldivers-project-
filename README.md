@@ -1,6 +1,6 @@
 <div align="center">
   
-  <h1> Helldivers - Super Earth Command</h1>
+  <h1> Helldivers - Project</h1>
   
   <p>
     <strong>A futuristic web application dedicated to the brave Helldivers fighting for Super Earth's freedom</strong>
@@ -11,11 +11,7 @@
 
 ## 📖 About The Project
 
-<div align="center">
-  <img src="docs/screenshots/home.png" alt="Homepage Screenshot" width="80%">
-</div>
-
-**Helldivers - Super Earth Command** is a modern, multi-language web application themed around the Helldivers universe. Built with React and featuring a sleek sci-fi aesthetic, this platform serves as a central hub for mission briefings, news updates, and galactic defense information.
+**Helldivers project** is a modern, multi-language web application themed around the Helldivers universe. Built with React and featuring a sleek sci-fi aesthetic, this platform serves as a central hub for mission briefings, news updates, and galactic defense information.
 
 ### Main Page Description
 
