@@ -6,17 +6,6 @@
   <p>
     <strong>A futuristic web application dedicated to the brave Helldivers fighting for Super Earth's freedom</strong>
   </p>
-  
-  <p>
-    <a href="#about">About</a> •
-    <a href="#features">Features</a> •
-    <a href="#demo">Demo</a> •
-    <a href="#technologies">Technologies</a> •
-    <a href="#getting-started">Getting Started</a> •
-    <a href="#usage">Usage</a> •
-    <a href="#contributing">Contributing</a> •
-    <a href="#license">License</a>
-  </p>
 </div>
 
 ---
