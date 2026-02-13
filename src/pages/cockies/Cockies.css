@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Insignia';
+    src: url('/handelgothic-bt/HandelGo.ttf') format('truetype');
+    font-display: swap;
+}
+
+#NotSuperearth {
+    color: aqua;
+    font-family: 'Insignia';
+    border: 5px double;
+    background: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 100px;
+    margin-left: 300px;
+    height: 80%;
+    width: 60%;
+}
+
+.square {
+    color: #f5c400;
+    text-shadow: 0 0 6px rgba(245, 196, 0, 0.7);
+}

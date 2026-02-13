@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/home/Home'
-import Cockie from "./pages/cockies/Cockie";
+import Cockie from "./pages/cockies/Cockies.jsx";
 
 function App() {
   return (
