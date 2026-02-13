@@ -11,7 +11,7 @@
 }
 
 
-#tittle {
+#title {
     width: 700px;
     font-family: 'Insignia';
     background-color: rgb(64, 64, 64);
@@ -33,20 +33,20 @@
         box-shadow 0.25s ease;
 }
 
-#tittle h1,
-#tittle p {
+#title h1,
+#title p {
     transform: skewX(12deg);
     margin: 0;
     font-size: 2.6rem;
 }
 
-#tittle.active {
+#title.active {
     background-color: #f5c400;
     color: rgb(30, 30, 30);
     box-shadow: 0 0 15px rgba(245, 196, 0, 0.6);
 }
 
-.subtittle {
+.subtitle {
     font-size: 0.9rem;
     margin-top: 6px;
     letter-spacing: 0.2em;
@@ -56,7 +56,7 @@
     font-family: "insignia";
 }
 
-#tittle .subtittle {
+#title .subtitle {
     font-size: 0.9rem;
     margin-top: 6px;
     letter-spacing: 0.2em;
@@ -65,7 +65,7 @@
     text-shadow: 0 0 6px rgba(0, 167, 245, 0.7);
 }
 
-#tittle.active .subtittle {
+#title.active .subtitle {
     color: rgb(30, 30, 30);
     opacity: 1;
 }

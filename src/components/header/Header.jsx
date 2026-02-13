@@ -7,12 +7,12 @@ function Header() {
     return (
         <header className="nav-container">
             <div
-                id="tittle"
+                id="title"
                 onClick={() => setOpen(!open)}
                 className={open ? "active" : ""}
             >
                 <h1>Helldivers</h1>
-                <p className="subtittle">Por Supertierra</p>
+                <p className="subtitle">Por Supertierra</p>
             </div>
 
             <nav className={`nav-panel ${open ? "open" : ""}`}>
