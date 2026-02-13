@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="public/font.png" alt="Helldivers Banner" width="100%">
   
   <h1> Helldivers - Super Earth Command</h1>
   
