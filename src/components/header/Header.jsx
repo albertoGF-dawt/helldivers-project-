@@ -1,8 +1,10 @@
 import { useState } from "react"
+import { useTranslation } from 'react-i18next'
 import "./header.css"
 
 function Header() {
     const [open, setOpen] = useState(false)
+    const { t } = useTranslation()
 
     return (
         <header className="nav-container">
@@ -11,15 +13,15 @@ function Header() {
                 onClick={() => setOpen(!open)}
                 className={open ? "active" : ""}
             >
-                <h1>Helldivers</h1>
-                <p className="subtitle">Por Supertierra</p>
+                <h1>{t('header.title')}</h1>
+                <p className="subtitle">{t('header.subtitle')}</p>
             </div>
 
             <nav className={`nav-panel ${open ? "open" : ""}`}>
-                <a href="/">Inicio</a>
-                <a href="/missions">Misiones</a>
-                <a href="/arsenal">Arsenal</a>
-                <a href="/settings">Configuración</a>
+                <a href="/"><span>{t('nav.home')}</span></a>
+                <a href="/missions"><span>{t('nav.missions')}</span></a>
+                <a href="/arsenal"><span>{t('nav.arsenal')}</span></a>
+                <a href="/settings"><span>{t('nav.settings')}</span></a>
             </nav>
         </header>
     )

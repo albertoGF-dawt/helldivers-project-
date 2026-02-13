@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Insignia';
+    src: url('/handelgothic-bt/HandelGo.ttf') format('truetype');
+    font-display: swap;
+}
+
+.language-selector {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.language-selector button {
+    font-family: 'Insignia';
+    background-color: rgb(64, 64, 64);
+    color: #f5c400;
+    border: 2px solid #f5c400;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.9rem;
+    transform: skewX(-12deg);
+    transition: all 0.25s ease;
+}
+
+.language-selector button span {
+    display: inline-block;
+    transform: skewX(12deg);
+}
+
+.language-selector button:hover {
+    background-color: #f5c400;
+    color: rgb(30, 30, 30);
+    box-shadow: 0 0 10px rgba(245, 196, 0, 0.5);
+}
+
+.language-selector button.active {
+    background-color: #f5c400;
+    color: rgb(30, 30, 30);
+    box-shadow: 0 0 15px rgba(245, 196, 0, 0.7);
+}

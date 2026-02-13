@@ -1,47 +1,56 @@
 import "./Cockies.css"
+import { useTranslation } from 'react-i18next'
+import Header from '../../components/header/Header'
+import Footer from '../../components/footer/Footer'
 
 function Cockie() {
+    const { t } = useTranslation()
+
     return (
-        <p id="NotSuperearth">
-            ATENCIÓN, CIUDADANO DIGITAL.<br /><br />
+        <>
+            <Header />
+            <p id="NotSuperearth">
+                {t('cockies.title')}<br /><br />
 
-            El Ministerio de Ciberdefensa de la Súper-Tierra ha detectado actividad masiva de entidades conocidas como COCKIES DE INTERNET infiltrándose en navegadores patrióticos.<br /><br />
+                {t('cockies.intro')}<br /><br />
 
-            Estas micro-unidades de rastreo se adhieren a su dispositivo con el pretexto de “mejorar la experiencia”, pero en realidad almacenan datos como:<br /><br />
+                {t('cockies.data_collected')}<br /><br />
 
-            Historial de <span className="square">█████████</span><br />
-            Preferencias de <span className="square">███████</span><br />
-            Credenciales parcialmente <span className="square">██████</span><br />
-            Patrones de consumo de <span className="square">███████████</span><br /><br />
+                {t('cockies.history')} <span className="square">█████████</span><br />
+                {t('cockies.preferences')} <span className="square">███████</span><br />
+                {t('cockies.credentials')} <span className="square">██████</span><br />
+                {t('cockies.consumption')} <span className="square">███████████</span><br /><br />
 
-            Los Cockies se clasifican en:<br /><br />
+                {t('cockies.classification')}<br /><br />
 
-            1. Cockies Esenciales<br />
-            Necesarios para el funcionamiento de la página. Nivel de amenaza: <span className="square">█</span>.<br /><br />
+                1. {t('cockies.essential.title')}<br />
+                {t('cockies.essential.description')} <span className="square">█</span>.<br /><br />
 
-            2. Cockies de Rendimiento<br />
-            Recolectan datos sobre cómo interactúa con el sistema. Nivel de vigilancia: <span className="square">███</span>.<br /><br />
+                2. {t('cockies.performance.title')}<br />
+                {t('cockies.performance.description')} <span className="square">███</span>.<br /><br />
 
-            3. Cockies de Marketing<br />
-            Rastrean su actividad a través de múltiples dominios <span className="square">████████</span> para mostrar propaganda comercial altamente dirigida. Nivel de intrusión: <span className="square">███████</span>.<br /><br />
+                3. {t('cockies.marketing.title')}<br />
+                {t('cockies.marketing.description')} <span className="square">████████</span> {t('cockies.marketing.description2')} <span className="square">███████</span>.<br /><br />
 
-            Informes indican que algunos Cockies pueden persistir durante <span className="square">█████</span> días, replicándose mediante <span className="square">█████████</span> cruzado entre sitios.<br /><br />
+                {t('cockies.persistence')} <span className="square">█████</span> {t('cockies.persistence2')} <span className="square">█████████</span> {t('cockies.persistence3')}<br /><br />
 
-            PROTOCOLO ANTICOCKIE:<br /><br />
+                {t('cockies.protocol.title')}<br /><br />
 
-            Revisar configuraciones de privacidad cada <span className="square">█</span> días.<br />
-            Rechazar Cockies no esenciales salvo autorización estratégica.<br />
-            Activar bloqueadores de <span className="square">█████████</span>.<br />
-            Borrar almacenamiento local antes de operaciones sensibles.<br /><br />
+                {t('cockies.protocol.step1')} <span className="square">█</span> {t('cockies.protocol.step1b')}<br />
+                {t('cockies.protocol.step2')}<br />
+                {t('cockies.protocol.step3')} <span className="square">█████████</span>.<br />
+                {t('cockies.protocol.step4')}<br /><br />
 
-            Recuerde, ciudadano:<br />
-            Cada Cockie aceptada sin leer fortalece al Imperio del <span className="square">███████████</span>.<br /><br />
+                {t('cockies.remember')}<br />
+                {t('cockies.remember2')} <span className="square">███████████</span>.<br /><br />
 
-            Mantenga su navegador limpio.<br />
-            Mantenga su democracia digital intacta.<br /><br />
+                {t('cockies.keep_clean')}<br />
+                {t('cockies.keep_democracy')}<br /><br />
 
-            Por la Súper-Tierra. Por la Privacidad Gestionada.
-        </p>
+                {t('cockies.closing')}
+            </p>
+            <Footer />
+        </>
     )
 }
 
