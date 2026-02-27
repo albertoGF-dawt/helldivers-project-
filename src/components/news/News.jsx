@@ -1,5 +1,8 @@
+import "./news.css";
+import newss from "../../data/news.json";
 import { useTranslation } from 'react-i18next'
-import "./News.css"
+import Header from '../../components/header/Header'
+import Footer from '../../components/footer/Footer'
 
 function News() {
     const { t } = useTranslation()
@@ -7,29 +10,19 @@ function News() {
     return (
         <>
             <div className="News-main-container">
-                <h1 id="tittleNews">{t('news.title')}</h1>
-                <section className="NewsA">
-                    <div className="News-container">
-                        <div className="New1">
-                            <img src="" alt="" />
-                            <h3>{t('news.example.title')}</h3>
-                            <p>{t('news.example.description')}</p>
+                <h2 id="tittleNews">{t('news.page.title')}</h2>
+                <div className="News-container">
+                    {newss.map((news) => (
+                        <div key={news.id} className="New1">
+                            {news.image && <img src={news.image} alt={news.image} />}
+                            <h3>{t(`news.news${news.id}.title`)}</h3>
+                            <p>{t(`news.news${news.id}.description`)}</p>
                         </div>
-                        <div className="New1">
-                            <img src="" alt="" />
-                            <h3>{t('news.example.title')}</h3>
-                            <p>{t('news.example.description')}</p>
-                        </div>
-                        <div className="New1">
-                            <img src="" alt="" />
-                            <h3>{t('news.example.title')}</h3>
-                            <p>{t('news.example.description')}</p>
-                        </div>
-                    </div>
-                </section>
+                    ))}
+                </div>
             </div>
         </>
-    )
+    );
 }
 
 export default News

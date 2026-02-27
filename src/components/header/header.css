@@ -4,10 +4,14 @@
     font-display: swap;
 }
 
-/* ===== CONTENEDOR ===== */
+
 .nav-container {
+    margin-left: 20%;
+    justify-items: center;
+    justify-content: center;
     position: relative;
     display: inline-block;
+    margin-bottom: 300px;
 }
 
 
@@ -101,7 +105,7 @@
     transform: skewX(-12deg) translateY(0);
 }
 
-/* ===== LINKS ===== */
+
 .nav-panel a {
     display: block;
     text-decoration: none;
@@ -140,4 +144,19 @@
     color: #ffffff;
     min-width: 340px;
     padding: 8px 0;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.header-wrapper img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-right: 50px;
+    margin-bottom: 300px;
 }
