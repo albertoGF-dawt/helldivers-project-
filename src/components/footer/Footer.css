@@ -4,7 +4,7 @@
     font-display: swap;
 }
 
-/* ===== CONTENEDOR FOOTER ===== */
+
 #Footer-container {
     width: 100%;
     font-family: 'Insignia';
@@ -28,14 +28,13 @@
 }
 
 
-/* ===== CONTENIDO INTERNO ===== */
 #Footer-container p,
 #Footer-container a {
     margin: 0;
     font-size: 0.9rem;
 }
 
-/* ===== LINK ===== */
+
 #Footer-container a {
     text-decoration: none;
     color: #f5c400;
@@ -52,7 +51,30 @@
     border-color: #ffffff;
 }
 
-/* ===== HOVER GLOBAL ===== */
+
 #Footer-container:hover {
     box-shadow: 0 0 15px rgba(245, 196, 0, 0.5);
+}
+
+.Icon-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.Icon-container img {
+    width: 80px;
+    height: 80px;
+    transition: all 0.25s ease;
+    background: rgb(40, 40, 40);
+    padding: 12px;
+    border: 2px solid #f5c400;
+    transform: skewX(-12deg);
+    box-shadow: 0 0 10px rgba(245, 196, 0, 0.2);
+
+}
+
+.Icon-container img:hover {
+    background: #f5c400;
+    box-shadow: 0 0 15px rgba(245, 196, 0, 0.7);
 }

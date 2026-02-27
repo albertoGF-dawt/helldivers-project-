@@ -9,7 +9,7 @@ import LanguageSelector from './components/LanguageSelector'  // ← AHORA SÍ
 function App() {
   return (
     <div className="app">
-      <LanguageSelector />  {/* ← AHORA SÍ */}
+      <LanguageSelector />
       <BrowserRouter>
         <Routes>
           <Route path="/home" element={<Home />} />
