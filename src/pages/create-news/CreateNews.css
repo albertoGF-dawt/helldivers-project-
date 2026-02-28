@@ -1,0 +1,48 @@
+.create-news-container {
+    width: 60%;
+    margin: 60px auto;
+    font-family: 'Insignia';
+    border: 5px double aqua;
+    border-radius: 15px;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: skew(-2deg);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.create-news-title {
+    color: #f5c400;
+    text-align: center;
+    letter-spacing: 0.15em;
+    font-size: 1.3rem;
+}
+
+.create-news-input {
+    background-color: rgba(64, 64, 64, 0.8);
+    border: 2px solid aqua;
+    color: aqua;
+    font-family: 'Insignia';
+    padding: 12px 16px;
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    outline: none;
+    resize: vertical;
+}
+
+.create-news-input::placeholder {
+    color: rgba(0, 255, 255, 0.4);
+}
+
+.create-news-input:focus {
+    border-color: #f5c400;
+    color: #f5c400;
+}
+
+.create-news-success {
+    color: #f5c400;
+    text-align: center;
+    letter-spacing: 0.15em;
+    font-size: 0.9rem;
+}

@@ -9,46 +9,23 @@ function Cockie() {
     return (
         <>
             <Header />
-            <p id="NotSuperearth">
-                {t('cockies.title')}<br /><br />
+            <div id="NotSuperearth">
 
-                {t('cockies.intro')}<br /><br />
+                <h1>{t('privacy.title')}</h1>
+                <p className="directiva">{t('privacy.subtitle')}</p>
 
-                {t('cockies.data_collected')}<br /><br />
+                <h2>{t('privacy.privacy_title')}</h2>
+                <p>{t('privacy.privacy_text')}</p>
 
-                {t('cockies.history')} <span className="square">█████████</span><br />
-                {t('cockies.preferences')} <span className="square">███████</span><br />
-                {t('cockies.credentials')} <span className="square">██████</span><br />
-                {t('cockies.consumption')} <span className="square">███████████</span><br /><br />
+                <h2>{t('privacy.cookies_title')}</h2>
+                <p>{t('privacy.cookies_text')}</p>
 
-                {t('cockies.classification')}<br /><br />
+                <h2>{t('privacy.sales_title')}</h2>
+                <p>{t('privacy.sales_text')}</p>
 
-                1. {t('cockies.essential.title')}<br />
-                {t('cockies.essential.description')} <span className="square">█</span>.<br /><br />
+                <p className="closing">{t('privacy.closing')}</p>
 
-                2. {t('cockies.performance.title')}<br />
-                {t('cockies.performance.description')} <span className="square">███</span>.<br /><br />
-
-                3. {t('cockies.marketing.title')}<br />
-                {t('cockies.marketing.description')} <span className="square">████████</span> {t('cockies.marketing.description2')} <span className="square">███████</span>.<br /><br />
-
-                {t('cockies.persistence')} <span className="square">█████</span> {t('cockies.persistence2')} <span className="square">█████████</span> {t('cockies.persistence3')}<br /><br />
-
-                {t('cockies.protocol.title')}<br /><br />
-
-                {t('cockies.protocol.step1')} <span className="square">█</span> {t('cockies.protocol.step1b')}<br />
-                {t('cockies.protocol.step2')}<br />
-                {t('cockies.protocol.step3')} <span className="square">█████████</span>.<br />
-                {t('cockies.protocol.step4')}<br /><br />
-
-                {t('cockies.remember')}<br />
-                {t('cockies.remember2')} <span className="square">███████████</span>.<br /><br />
-
-                {t('cockies.keep_clean')}<br />
-                {t('cockies.keep_democracy')}<br /><br />
-
-                {t('cockies.closing')}
-            </p>
+            </div>
             <Footer />
         </>
     )
