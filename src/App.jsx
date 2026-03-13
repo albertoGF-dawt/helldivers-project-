@@ -6,6 +6,8 @@ import Cockie from "./pages/cockies/Cockies.jsx";
 import Missions from "./pages/missions/Missions.jsx";
 import LanguageSelector from './components/LanguageSelector'
 import CreateNews from "./pages/create-news/CreateNews.jsx"
+import RssFeed from "./pages/rss/RssFeed.jsx"
+import NewsDetail from "./pages/news-detail/NewsDetail.jsx"
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/Cockies" element={<Cockie />} />
           <Route path="/missions" element={<Missions />} />
+          <Route path="/rss" element={<RssFeed />} />
+          <Route path="/news/:id" element={<NewsDetail />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -49,7 +49,7 @@
     text-align: center;
 }
 
-.News-container :hover {
+.News-container .New1:hover {
     scale: 1.2;
 }
 
@@ -102,7 +102,7 @@
         margin-left: 0;
     }
 
-    .News-container :hover {
+    .News-container .New1:hover {
         scale: 1.1;
     }
 }
@@ -133,7 +133,7 @@
         margin-left: 0;
     }
 
-    .News-container :hover {
+    .News-container .New1:hover {
         scale: 1.05;
     }
 
@@ -182,4 +182,95 @@
     padding: 2px 8px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+}
+
+/* ── CRUD buttons ── */
+.news-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.8rem;
+}
+
+.news-btn {
+    border: none;
+    padding: 0.4rem 0.9rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.82rem;
+    font-weight: 600;
+    transition: opacity 0.2s;
+}
+
+.news-btn:hover {
+    opacity: 0.8;
+}
+
+.edit-btn {
+    background: rgba(245, 166, 35, 0.2);
+    border: 1px solid #f5a623;
+    color: #f5a623;
+}
+
+.delete-btn {
+    background: rgba(220, 50, 50, 0.15);
+    border: 1px solid #dc3232;
+    color: #dc3232;
+}
+
+/* ── Modal ── */
+.edit-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.edit-modal {
+    background: #1a1a1a;
+    border: 1px solid #f5a623;
+    border-radius: 8px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.edit-modal h3 {
+    color: #f5a623;
+    margin: 0 0 0.5rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.edit-input {
+    width: 100%;
+    background: #0d0d0d;
+    border: 1px solid #444;
+    border-radius: 4px;
+    padding: 0.6rem 0.8rem;
+    color: #e0ddd5;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.edit-input:focus {
+    outline: none;
+    border-color: #f5a623;
+}
+
+.edit-modal-actions {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.New1 {
+    cursor: pointer;
 }

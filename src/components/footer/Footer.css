@@ -4,65 +4,60 @@
     font-display: swap;
 }
 
-
-#Footer-container {
+#footer-container {
     width: 100%;
     font-family: 'Insignia';
     background-color: rgb(64, 64, 64);
-
     border-top: 3px solid #f5c400;
     color: #f5c400;
-
     text-transform: uppercase;
     letter-spacing: 0.12em;
-
     padding: 22px 40px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 8px;
-    transition:
-        background-color 0.25s ease,
-        box-shadow 0.25s ease;
+    transition: background-color 0.25s ease, box-shadow 0.25s ease;
 }
 
-
-#Footer-container p,
-#Footer-container a {
+#footer-container p,
+#footer-container a {
     margin: 0;
     font-size: 0.9rem;
 }
 
-
-#Footer-container a {
+#footer-container a {
     text-decoration: none;
     color: #f5c400;
     border-bottom: 1px solid rgba(245, 196, 0, 0.4);
     padding-bottom: 2px;
-
-    transition:
-        color 0.25s ease,
-        border-color 0.25s ease;
+    transition: color 0.25s ease, border-color 0.25s ease;
 }
 
-#Footer-container a:hover {
+#footer-container a:hover {
     color: #ffffff;
     border-color: #ffffff;
 }
 
-
-#Footer-container:hover {
+#footer-container:hover {
     box-shadow: 0 0 15px rgba(245, 196, 0, 0.5);
 }
 
-.Icon-container {
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.icon-container {
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
 
-.Icon-container img {
+.icon-container img {
     width: 80px;
     height: 80px;
     transition: all 0.25s ease;
@@ -71,20 +66,36 @@
     border: 2px solid #f5c400;
     transform: skewX(-12deg);
     box-shadow: 0 0 10px rgba(245, 196, 0, 0.2);
-
 }
 
-.Icon-container img:hover {
+.icon-container img:hover {
     background: #f5c400;
     box-shadow: 0 0 15px rgba(245, 196, 0, 0.7);
 }
 
+.rss-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    border-bottom: none !important;
+}
+
+.rss-badge {
+    background: #f5a623;
+    color: #000;
+    font-size: 0.65rem;
+    font-weight: bold;
+    padding: 0.1rem 0.35rem;
+    border-radius: 3px;
+    letter-spacing: 0.5px;
+}
+
 @media (max-width: 1024px) {
-    #Footer-container {
+    #footer-container {
         padding: 18px 30px;
     }
 
-    .Icon-container img {
+    .icon-container img {
         width: 70px;
         height: 70px;
         padding: 10px;
@@ -92,11 +103,11 @@
 }
 
 @media (max-width: 768px) {
-    #Footer-container {
+    #footer-container {
         padding: 16px 20px;
     }
 
-    .Icon-container img {
+    .icon-container img {
         width: 60px;
         height: 60px;
         padding: 8px;
@@ -104,13 +115,18 @@
 }
 
 @media (max-width: 480px) {
-    #Footer-container {
+    #footer-container {
         padding: 12px 16px;
     }
 
-    .Icon-container img {
+    .icon-container img {
         width: 50px;
         height: 50px;
         padding: 6px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
     }
 }

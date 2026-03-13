@@ -22,6 +22,7 @@ i18n
           footer: {
             copyright: "© 2026 copyright Comité de Defensa Planetaria",
             cookies: "Cockies y privacidad",
+            rss: "Feed de noticias"
           },
           news: {
             page: { title: "Noticias Helldivers" },
@@ -81,6 +82,7 @@ i18n
           footer: {
             copyright: "© 2026 copyright Planetary Defense Committee",
             cookies: "Cookies and Privacy",
+            rss: "News Feed",
           },
           news: {
             page: { title: "Helldivers News" },
