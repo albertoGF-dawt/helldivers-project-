@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+
+        <title>Helldivers News</title>
+        <link>https://tu-app.web.app</link>
+        <description>Latest Helldivers news</description>
+
+        <item>
+            <title>Helldivers Update</title>
+            <link>https://tu-app.web.app/news/1</link>
+            <description>New update available</description>
+        </item>
+
+    </channel>
+</rss>

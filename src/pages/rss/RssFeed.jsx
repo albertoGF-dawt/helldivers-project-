@@ -93,10 +93,9 @@ function RssFeed() {
                         ))}
                     </div>
 
-                    <details className="rss-xml-preview">
-                        <summary>Ver XML del feed</summary>
-                        <pre>{generateRssXml()}</pre>
-                    </details>
+                    <a href="/rss.xml" target="_blank">
+                        Ver RSS XML
+                    </a>
                 </>
             )}
         </div>
