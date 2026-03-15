@@ -42,6 +42,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#rss-feed">RSS Feed</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -128,6 +129,30 @@ The language selector (ES/EN) is available at all times on every page.
 
 
 
+## RSS Feed
+
+The app includes a live RSS feed with the latest news from the galactic front.
+
+**Feed URL:**
+```
+https://helldiversapp.firebaseapp.com/rss.xml
+```
+
+### How to subscribe with Feedreader
+
+1. Go to [feedreader.com](https://feedreader.com) and log in
+2. Click the **"+"** or **"Add Feed"** button
+3. Paste the feed URL above and confirm
+4. The Helldivers news will now appear in your reader automatically
+
+> **Note:** The `rss.xml` file is static and lives in the `public/` folder. To update the feed with new news, replace the file and run `firebase deploy` again.
+
+![Descripción](assets/feed-reader.png)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
 ## Roadmap
 
 - [x] Home page with dynamic news from Firebase
@@ -135,6 +160,7 @@ The language selector (ES/EN) is available at all times on every page.
 - [x] Multilanguage support (ES/EN) — except News, which is user-generated content
 - [x] Create news form
 - [x] Themed cookies & privacy page
+- [x] RSS Feed
 
 See the [open issues](https://github.com/albertoGF-dawt/helldivers-project-/issues) for a full list of proposed features and known bugs.
 
