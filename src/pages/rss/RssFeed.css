@@ -1,234 +1,325 @@
+/* ── RSS PAGE ─────────────────────────────────────────── */
 .rss-page {
-    max-width: 860px;
-    margin: 2rem auto;
-    padding: 2rem;
+    max-width: 900px;
+    margin: 2rem auto 4rem;
+    padding: 0 1.5rem;
     color: #e0ddd5;
     font-family: 'Segoe UI', sans-serif;
 }
 
+/* ── HEADER ───────────────────────────────────────────── */
 .rss-header {
     text-align: center;
+    padding: 2.5rem 0 2rem;
     margin-bottom: 2rem;
     border-bottom: 2px solid #f5a623;
-    padding-bottom: 1.5rem;
+    position: relative;
 }
 
-.rss-icon {
-    font-size: 3rem;
+.rss-logo {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
     display: block;
-    margin-bottom: 0.5rem;
-    width: 5em;
-    align-items: center;
-    align-self: center;
+    margin: 0 auto 1rem;
+    filter: drop-shadow(0 0 12px rgba(245, 166, 35, 0.5));
 }
 
 .rss-header h1 {
     color: #f5a623;
-    font-size: 1.8rem;
-    margin: 0.3rem 0;
+    font-size: 2rem;
+    margin: 0 0 0.4rem;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
+    font-weight: 700;
 }
 
 .rss-header p {
-    color: #aaa;
+    color: #888;
     margin: 0;
-}
-
-.rss-info {
-    background: rgba(245, 166, 35, 0.08);
-    border: 1px solid rgba(245, 166, 35, 0.3);
-    border-radius: 8px;
-    padding: 1.2rem 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.rss-info label {
-    display: block;
-    font-size: 0.8rem;
-    color: #aaa;
-    text-transform: uppercase;
+    font-size: 0.9rem;
     letter-spacing: 1px;
-    margin-bottom: 0.5rem;
+}
+
+/* ── URL BOX ──────────────────────────────────────────── */
+.rss-url-box {
+    background: rgba(245, 166, 35, 0.05);
+    border: 1px solid rgba(245, 166, 35, 0.25);
+    border-radius: 6px;
+    padding: 1.2rem 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.rss-url-label {
+    display: block;
+    font-size: 0.7rem;
+    color: #f5a623;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
 }
 
 .rss-url-row {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.8rem;
     flex-wrap: wrap;
 }
 
 .rss-url-row code {
-    background: rgba(0, 0, 0, 0.4);
-    border: 1px solid #444;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #333;
     border-radius: 4px;
-    padding: 0.4rem 0.8rem;
+    padding: 0.45rem 0.9rem;
     color: #f5a623;
-    font-size: 0.95rem;
-    flex: 1;
-    min-width: 200px;
-}
-
-.rss-desc {
-    margin: 1rem 0 0;
     font-size: 0.9rem;
-    color: #999;
-    line-height: 1.5;
+    flex: 1;
+    min-width: 180px;
 }
 
-.rss-actions {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 2rem;
-    flex-wrap: wrap;
-}
-
+/* ── BUTTONS ──────────────────────────────────────────── */
 .rss-btn {
     background: transparent;
     border: 1px solid #f5a623;
     color: #f5a623;
-    padding: 0.5rem 1.2rem;
+    padding: 0.45rem 1.1rem;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 0.9rem;
-    transition: all 0.2s;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    transition: background 0.2s, color 0.2s;
     white-space: nowrap;
+    font-family: inherit;
 }
 
 .rss-btn:hover {
-    background: rgba(245, 166, 35, 0.15);
+    background: rgba(245, 166, 35, 0.18);
 }
 
 .rss-btn.primary {
-    background: rgba(245, 166, 35, 0.15);
+    background: rgba(245, 166, 35, 0.12);
 }
 
-.rss-news-title {
-    color: #f5a623;
-    font-size: 1rem;
+.rss-btn.primary:hover {
+    background: rgba(245, 166, 35, 0.28);
+}
+
+/* ── SECTION TITLE ────────────────────────────────────── */
+.rss-section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.75rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    color: #666;
+    border-bottom: 1px solid #222;
+    padding-bottom: 0.6rem;
+    margin-bottom: 1.2rem;
 }
 
+.rss-count {
+    color: #f5a623;
+    font-weight: 600;
+}
+
+/* ── LOADING ──────────────────────────────────────────── */
+.rss-loading {
+    text-align: center;
+    padding: 3rem;
+    color: #555;
+}
+
+.rss-loading p {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.rss-loading-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #f5a623;
+    margin: 0 4px;
+    animation: rss-pulse 1.2s ease-in-out infinite;
+}
+
+.rss-loading-dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.rss-loading-dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes rss-pulse {
+
+    0%,
+    100% {
+        opacity: 0.2;
+        transform: scale(0.8);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
+
+/* ── NEWS LIST ────────────────────────────────────────── */
 .rss-news-list {
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
-    margin-bottom: 2rem;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
 }
 
-.rss-news-item {
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid #333;
-    border-radius: 6px;
-    padding: 1rem 1.2rem;
-}
-
-.rss-news-item h3 {
-    margin: 0 0 0.4rem;
-    color: #fff;
-    font-size: 1rem;
-}
-
-.rss-news-item p {
-    margin: 0 0 0.5rem;
-    color: #999;
-    font-size: 0.85rem;
-    line-height: 1.4;
-}
-
-.rss-category {
-    display: inline-block;
-    background: rgba(245, 166, 35, 0.2);
-    color: #f5a623;
-    font-size: 0.75rem;
-    padding: 0.2rem 0.6rem;
-    border-radius: 3px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.rss-loading,
 .rss-empty {
     text-align: center;
-    color: #666;
-    padding: 2rem;
+    color: #444;
+    padding: 3rem;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
 }
 
-.rss-xml-preview {
-    border: 1px solid #333;
+/* ── NEWS ITEM ────────────────────────────────────────── */
+.rss-news-item {
+    display: flex;
+    align-items: stretch;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid #2a2a2a;
     border-radius: 6px;
     overflow: hidden;
-}
-
-.rss-xml-preview summary {
-    background: rgba(255, 255, 255, 0.05);
-    padding: 0.7rem 1rem;
-    cursor: pointer;
-    color: #aaa;
-    font-size: 0.85rem;
-    user-select: none;
-}
-
-.rss-xml-preview summary:hover {
-    color: #fff;
-}
-
-.rss-xml-preview pre {
-    background: #0d0d0d;
-    padding: 1rem;
-    overflow-x: auto;
-    font-size: 0.75rem;
-    color: #7ec8a0;
-    margin: 0;
-    max-height: 400px;
-    overflow-y: auto;
-    line-height: 1.5;
-}
-
-.rss-news-item {
     text-decoration: none;
-    display: block;
+    color: inherit;
+    transition: border-color 0.2s, background 0.2s;
     cursor: pointer;
 }
 
 .rss-news-item:hover {
-    border-color: aqua;
+    border-color: #f5a623;
+    background: rgba(245, 166, 35, 0.04);
 }
 
-.rss-xml-preview {
-    margin-top: 2rem;
-    border: 1px solid rgba(245, 166, 35, 0.3);
-    border-radius: 6px;
+/* ── ITEM IMAGE ───────────────────────────────────────── */
+.rss-item-img-wrap {
+    width: 140px;
+    min-width: 140px;
+    flex-shrink: 0;
     overflow: hidden;
+    background: #111;
 }
 
-.rss-xml-preview summary {
-    background: rgba(255, 255, 255, 0.05);
-    padding: 0.7rem 1rem;
-    cursor: pointer;
-    color: #aaa;
-    font-size: 0.85rem;
-    user-select: none;
-    font-family: 'Insignia', sans-serif;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+.rss-item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.3s;
 }
 
-.rss-xml-preview summary:hover {
-    color: #fff;
+.rss-news-item:hover .rss-item-img {
+    transform: scale(1.05);
 }
 
-.rss-xml-preview pre {
-    background: #0a0a0a;
-    padding: 1rem;
-    overflow-x: auto;
-    font-size: 0.75rem;
-    color: #7ec8a0;
+/* ── ITEM BODY ────────────────────────────────────────── */
+.rss-item-body {
+    padding: 1rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    flex: 1;
+}
+
+.rss-item-body h3 {
     margin: 0;
-    max-height: 400px;
-    overflow-y: auto;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.rss-item-body p {
+    margin: 0;
+    color: #888;
+    font-size: 0.85rem;
     line-height: 1.5;
+    flex: 1;
+}
+
+.rss-item-link {
+    font-size: 0.75rem;
+    color: #f5a623;
+    letter-spacing: 0.5px;
+    margin-top: 0.3rem;
+}
+
+/* ── CATEGORY BADGES ──────────────────────────────────── */
+.rss-category {
+    display: inline-block;
+    font-size: 0.65rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    width: fit-content;
+}
+
+.cat-mission {
+    background: rgba(245, 166, 35, 0.15);
+    color: #f5a623;
+    border: 1px solid rgba(245, 166, 35, 0.3);
+}
+
+.cat-alert {
+    background: rgba(220, 60, 60, 0.15);
+    color: #e05555;
+    border: 1px solid rgba(220, 60, 60, 0.3);
+}
+
+.cat-update {
+    background: rgba(60, 180, 220, 0.15);
+    color: #4ab8e0;
+    border: 1px solid rgba(60, 180, 220, 0.3);
+}
+
+/* ── FOOTER ICON ──────────────────────────────────────── */
+.rss-footer-icon {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.rss-icon-img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+}
+
+.rss-icon-img:hover {
+    opacity: 1;
+}
+
+/* ── RESPONSIVE ───────────────────────────────────────── */
+@media (max-width: 540px) {
+    .rss-item-img-wrap {
+        width: 90px;
+        min-width: 90px;
+    }
+
+    .rss-url-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .rss-url-row code {
+        min-width: unset;
+    }
 }

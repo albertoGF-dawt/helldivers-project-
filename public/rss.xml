@@ -7,9 +7,36 @@
         <description>Latest Helldivers news</description>
 
         <item>
-            <title>Helldivers Update</title>
-            <link>https://tu-app.web.app/news/1</link>
-            <description>New update available</description>
+            <title>Fallo en la defensa de cyberstan</title>
+            <link>https://tu-app.web.app/news/-OmZ5Claxr6f34n5ta3h</link>
+            <description>Los helldivers han fallado en la defensa de cyberstan, supertierra amenaza
+                con erradicar el planeta autómata como último remedio contra la amenaza. Por
+                Supertierra.</description>
+            <category>mission</category>
+            <enclosure
+                url="https://helldivers.wiki.gg/images/thumb/Cyberstan_Planet_Icon.png/600px-Cyberstan_Planet_Icon.png"
+                type="image/png" />
+        </item>
+
+        <item>
+            <title>paloma</title>
+            <link>https://tu-app.web.app/news/-OmqVflqk2bB2VIocDKd</link>
+            <description>paloma</description>
+            <category>alert</category>
+        </item>
+
+        <item>
+            <title>asdf</title>
+            <link>https://tu-app.web.app/news/-OmqVqTADN_J2jP5TYMc</link>
+            <description>asdf</description>
+            <category>mission</category>
+        </item>
+
+        <item>
+            <title>Sin título</title>
+            <link>https://tu-app.web.app/news/-OmqWpAjyYS36EBx2qKk</link>
+            <description>dd</description>
+            <category>mission</category>
         </item>
 
     </channel>

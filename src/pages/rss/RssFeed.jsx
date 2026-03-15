@@ -93,8 +93,8 @@ function RssFeed() {
                         ))}
                     </div>
 
-                    <a href="/rss.xml" target="_blank">
-                        Ver RSS XML
+                    <a href="/rss.xml" >
+                        <img src="./rss-icon.png" alt="rss-icon-link" className="rss-icon-img" />
                     </a>
                 </>
             )}
