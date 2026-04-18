@@ -5,6 +5,7 @@ import { db } from '../../Firebase'
 import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 import './NewsDetail.css'
+import { saveFileInFormat } from "../../Utils/file-export";
 
 function NewsDetail() {
     const { id } = useParams()
@@ -21,6 +22,33 @@ function NewsDetail() {
         })
     }, [id])
 
+    const exportJSON = () => {
+        if (!news) return
+        saveFileInFormat("json", news, `news-${id}.json`)
+    }
+
+    const exportXML = () => {
+        if (!news) return
+
+        const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<news>
+    <title>${news.title}</title>
+    <description>${news.description}</description>
+    <category>${news.category || ''}</category>
+    <image>${news.image || ''}</image>
+</news>`
+
+        saveFileInFormat("xml", xml, `news-${id}.xml`)
+    }
+
+    const exportCSV = () => {
+        if (!news) return
+
+        const csv = `title,description,category,image
+"${news.title}","${news.description}","${news.category || ''}","${news.image || ''}"`
+
+        saveFileInFormat("csv", csv, `news-${id}.csv`)
+    }
     return (
         <>
             <Header />
@@ -44,6 +72,11 @@ function NewsDetail() {
                     </article>
                 )}
 
+                <div className="news-export-buttons">
+                    <button onClick={exportJSON}>Exportar JSON</button>
+                    <button onClick={exportXML}>Exportar XML</button>
+                    <button onClick={exportCSV}>Exportar CSV</button>
+                </div>
                 <button className="news-detail-back" onClick={() => navigate('/')}>
                     Volver a noticias
                 </button>
